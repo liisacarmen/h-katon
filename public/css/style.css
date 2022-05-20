@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin-top: 3rem;
+}
+
+.travel-card {
+    align-items: center;
+    margin-top: 5rem;
+    height: 5rem;
+    text-align: center;
+}
+
+.travel-title {
+    text-transform: uppercase;
+    align-items: center;
+    transform: translateY(-70px);
+    color: rgb(101, 227, 233);
+    animation: slide-from-top 3.5s ease-in-out forwards;
+}
+
+.travel-poster {
+    border-radius: 5px;
+    margin-right: 2rem;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.travel-info-container {
+    height: 100%;
+    width: 70%;
+    color: #fff;
+    padding-top: 2rem;
+}
+
+.movie-info-container > *:not(.movie-info-title){
+    opacity: 0;
+    /*for animation*/
+    animation: fade-in 3.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.carousel { 
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+    display: none;
+}
+
+.carousel .carousel__item--visible {
+    display: block;
+    animation: fadeIn 0.6s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+    
+.carousel .carousel__actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: rgba(210, 180, 140, 0.733);
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem;
+}
+
+.movie-info-title {
+    text-transform: capitalize;
+    margin-top: 2rem;
+    /*add for animation*/
+    transform: translateY(-150px);
+    animation: slide-from-top 3.5s ease-in-out forwards;
+}
+
+@keyframes slide-from-top {
+    50% {transform: translateY(10px);}
+    100% {transform: translateY(0);}
+}
+
+.travel-info-container {
+    align-items: center;
+    text-align: center;
+}
+
+.travel-info-quote {
+    font-style: italic;
+    color: black;
+    margin-top: 1rem;
+    margin-left: 22rem;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #777;
+}
+
+.carousel img {
+    height: 800px;
+}

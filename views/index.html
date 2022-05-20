@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5663abafec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Travel Site</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <form action="/search" method="POST">
+                <input type="text" name="weatherTitle" placeholder="Search weather">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    
+        <div class="travel-card">
+        <h2 class="travel-title">WELCOME TO OUR TRAVEL SITE</h2>
+            <p class="travel-destinations"> 
+                We have the best travel destinations all over the world!
+            </p> 
+        </div> 
+ 
+        <div class="carousel">
+            <div class="carousel__item carousel__item--visible">
+                <a href="https://www.qries.com/">
+                    <img alt="" src="https://deih43ym53wif.cloudfront.net/bali-indonesia-shutterstock_459773704_0dd494ecf7.jpeg">
+                 </a>
+            </div>
+
+            <div class="carousel__item">
+                <a href="">
+                    <img alt="" src="https://www.worldatlas.com/r/w1200/upload/2a/cc/96/alps-mountain-range-europe.jpg">
+                 </a>
+            </div>
+
+            <div class="carousel__item">
+                <a href="">
+                    <img alt="" src="https://www.worldatlas.com/r/w1200/upload/2a/cc/96/alps-mountain-range-europe.jpg">
+                 </a>
+            </div>
+
+            <div class="carousel__item">
+                <a href="">
+                    <img alt="" src="https://www.worldatlas.com/r/w1200/upload/2a/cc/96/alps-mountain-range-europe.jpg">
+                 </a>
+            </div>
+
+            <div class="carousel__item">
+                <a href="">
+                    <img alt="" src="https://www.worldatlas.com/r/w1200/upload/2a/cc/96/alps-mountain-range-europe.jpg">
+                 </a>
+            </div>
+
+            <div class="carousel__item">
+                <a href="">
+                    <img alt="" src="https://www.worldatlas.com/r/w1200/upload/2a/cc/96/alps-mountain-range-europe.jpg">
+                 </a>
+            </div>
+
+            <div class="carousel__actions">
+                <button id="carousel__button--prev" aria-label="Previous slide" ><</button>
+                <button id="carousel__button--next" aria-label="carousel__button--next slide" >></button>
+            </div>
+        </div>
+
+        <div class="travel-info-container">
+            <p class="travel-info-quote">Making your holiday dreams come true since 2021</p>
+        </div>
+    </div>
+
+    <!-- <script src="scripts/app.js"></script> -->
+    <script src="public/scripts/carousel.js"></script>
+
+</body>
+</html>
